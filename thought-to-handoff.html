@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Dynamic Design Process - From Thought to Hand-off - Maris Pulk</title>
+<meta name="description" content="Designing 'to-do', a task organiser landing page, from wireframes through to a re-skinned second version.">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="article.css">
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Maris Pulk</a>
+      <a href="index.html" class="back-link">&larr; Back</a>
+    </div>
+  </header>
+
+  <main class="article article--purple">
+    <div class="article-header fade-in in-view">
+      <p class="article-eyebrow">Case Study</p>
+      <h1>A Dynamic Design Process - From Thought to Hand-off</h1>
+      <p class="article-subtext">A walkthrough of my process for designing "to-do", a task organiser landing page, from first wireframe to a fully re-skinned second version. Covering grid systems, style guides, and how I structure files so re-skinning takes minutes, not days.</p>
+      <div class="article-tags">
+        <span class="work-card-tag work-card-tag--b2b">B2B</span>
+        <span class="work-card-tag work-card-tag--b2c">B2C</span>
+        <span class="work-card-tag work-card-tag--styleguide">Styleguide</span>
+      </div>
+      <div class="figma-cta-group">
+        <a href="https://www.figma.com/design/6nuVOQIRAvwc6e9reuTq9S/To-do--Customer-facing?node-id=0-1&t=YR8iMA6KvrR6Rmf9-1" class="figma-cta figma-cta--light" target="_blank" rel="noopener">
+          <img src="assets/icons/figma.png" alt="">
+          Open light mode
+        </a>
+        <a href="https://www.figma.com/design/59SmvcA7D6nwwfeNSKJ0cc/To-do--B2B?node-id=0-1&t=HYUByA8pZHkTQtfU-1" class="figma-cta" target="_blank" rel="noopener">
+          <img src="assets/icons/figma.png" alt="">
+          Open dark mode
+        </a>
+      </div>
+    </div>
+
+    <figure class="figure-image article-cover fade-in in-view">
+      <img src="assets/thought-to-handoff/cover.png" alt="From Thought to Hand-off cover">
+    </figure>
+
+    <article class="article-body fade-in in-view">
+      <h2>Digital product</h2>
+      <p>The brief was to design a landing page for a task organiser app, "to-do". To ground the design in something real, I selected an existing task management app design from the Figma Community as my starting point. It provided the primary inspiration for both the colour palette and the overall theme of the page.</p>
+      <p>The brief also called for two distinct "skins" of the same landing page, so I designed two variations and built the landing page with an easily adaptable styleguide: a light version with a friendly feel aimed at everyday customers, and a dark version with a more mature look aimed at a B2B audience.</p>
+      <figure class="figure-image">
+        <img src="assets/thought-to-handoff/light-dark-mode.png" alt="Light mode and dark mode landing pages, side by side">
+      </figure>
+      <p class="figure-caption">Light mode and dark mode landing pages, side by side</p>
+
+      <h2>Wireframes &amp; grid</h2>
+      <p>After settling on the type of product, I built wireframes for mobile and desktop at the same time rather than one after the other. For consistency I used a 1440px width for desktop and the iPhone 16 dimensions (393 &times; 852) as the base for mobile.</p>
+      <p>I set up a vertical grid system focused on keeping side margins consistent, which made the layout cleaner and much easier to scale across screen sizes.</p>
+      <p>Following the page structure: Header, Hero, Benefits, Features, Testimonials, Get in Touch, and Footer, I built out text and image placeholders using Figma's Auto Layout. Every time I finished a section for one screen size, I immediately built its counterpart for the other, which kept mobile and desktop moving in lockstep instead of one falling behind.</p>
+      <figure class="figure-image">
+        <img src="assets/thought-to-handoff/wireframes.png" alt="Wireframes for desktop and mobile, built in parallel">
+      </figure>
+      <p class="figure-caption">Wireframes for desktop and mobile, built in parallel</p>
+
+      <h2>Style guide</h2>
+      <p>With the wireframes in place, I turned the placeholder text into defined text styles which consisted of a dedicated set for each device, so hierarchy and clarity held up across screen sizes. Once those were established, I swapped every placeholder in the wireframes for the new styles, so the final design phase would only ever need content adjustments, not structural ones.</p>
+      <figure class="figure-image">
+        <img src="assets/thought-to-handoff/text-sizes.png" alt="Text style guide, per device">
+      </figure>
+      <p class="figure-caption">Text styles</p>
+      <p>For colour, the goal was a palette that felt versatile enough to re-skin later. I built Primary, Secondary, and Tertiary colours, a Neutral tone for the background, and Purple and Pink accents — ten colours in total, structured to support and unify the page's final look.</p>
+      <figure class="figure-image">
+        <img src="assets/thought-to-handoff/colour-palette.png" alt="Colour palette">
+      </figure>
+      <p class="figure-caption">Colour palette for light mode</p>
+      <p>There were two ways to make the style guide flexible enough to re-skin: use variables within the file to manage reusable styles, or set up a style guide and duplicate the file to re-skin the design. I went with the second approach since my personal Figma account is on the free plan, which doesn't include the variable modes needed to build the first system.</p>
+
+      <h3>Buttons, icons and effects</h3>
+      <p>With colours and text styles settled, I moved on to the button components, designed separately per device so each could carry the right visual weight and usability for its platform, and to show how CTAs could adapt across screen sizes.</p>
+      <figure class="figure-image" style="aspect-ratio: 1920 / 774;">
+        <img src="assets/thought-to-handoff/buttons.png" alt="Button components, per device">
+      </figure>
+      <p class="figure-caption">Desktop and mobile button variations</p>
+      <p>Alongside that, I built a compact icon library to keep the interface consistent, and defined a small set of effects such as drop shadow, inner shadow, layer blur, and background blur that I could apply across the page. Together, these pieces reinforced one cohesive, flexible visual style.</p>
+      <figure class="figure-image" style="aspect-ratio: 1920 / 616;">
+        <img src="assets/thought-to-handoff/icons.png" alt="Icon library">
+      </figure>
+      <p class="figure-caption">Compact icon library</p>
+
+      <h2>Final design</h2>
+      <p>For the final design, I took the wireframe foundations and applied the style guide's colours, dropping assets into pre-built card components for each section. This is also where I designed the final footer and top navigation, so every layout felt consistent and complete.</p>
+      <figure class="figure-image" style="aspect-ratio: 1920 / 774;">
+        <img src="assets/thought-to-handoff/top-nav-footer.png" alt="Top navigation and footer">
+      </figure>
+      <p class="figure-caption">Footer and navigation</p>
+      <p>To add visual depth, I brought in accent colours from the palette and built gradients with reduced opacity and layered effects — an approach that made those styles easy to update later when re-skinning the page.</p>
+      <p>Finally, I organised the final designs into separate pages so that, in prototype mode, each could be viewed at its correct screen size.</p>
+      <figure class="figure-image">
+        <img src="assets/thought-to-handoff/final-light-prototype.png" alt="Final light prototype">
+      </figure>
+      <p class="figure-caption">Final prototype for light mode</p>
+
+      <h2>Second skin</h2>
+      <p>Once the first version was finished, I duplicated the file to build the second variation which was a dark, B2B-facing version. I started by updating the colour palette, then adjusted the text styles, and finished by replacing the assets.</p>
+      <p>Because the style guide and components were already well-structured, updating the colours and text styles (not counting the asset changes due to the different target audience) took less than 30 minutes. That turnaround was the whole point of investing time in the style guide up front.</p>
+      <figure class="figure-image">
+        <img src="assets/thought-to-handoff/final-dark-prototype.png" alt="Final dark prototype">
+      </figure>
+      <p class="figure-caption">Final prototype for dark mode</p>
+
+      <h2>External tools</h2>
+      <p>A few external resources supported the process: a UI icon library and a product design library, both sourced from the Figma Community (the icon library for general interface icons), and the product design library for the four core screens of the task management app. I also used ChatGPT throughout, mainly to explore different directions for the product, get additional suggestions on the brief, and sharpen content I'd already written.</p>
+
+      <h2>Reflections</h2>
+      <p>What stuck with me most from this project was how much a well-built style guide pays off later. Because the text styles, colours, and components were structured properly from the start, re-skinning the entire landing page for a completely different audience took minutes rather than a full redesign, proof that the groundwork in the early stages is what makes the later stages fast.</p>
+    </article>
+
+    <div class="article-footer">
+      <a href="index.html" class="back-link">&larr; Back to home</a>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maris Pulk - Portfolio</title>
+<meta name="description" content="Portfolio of Maris Pulk, designer.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#top" class="logo">Maris Pulk</a>
+
+      <nav class="nav-desktop" aria-label="Primary">
+        <a href="#about">About me</a>
+        <a href="#process">How I work</a>
+        <a href="#work">My Projects</a>
+        <a href="#projects">Upcoming</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://www.linkedin.com/in/maris-pulk-169283166/" class="icon-link" aria-label="LinkedIn" target="_blank" rel="noopener">in</a>
+        <a href="#" class="icon-link" aria-label="Resume" target="_blank" rel="noopener">CV</a>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileNav">
+          <span class="menu-toggle-text">Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav overlay -->
+  <nav class="nav-mobile" id="mobileNav" aria-label="Mobile primary">
+    <a href="#about">About me</a>
+    <a href="#process">How I work</a>
+    <a href="#work">My Projects</a>
+    <a href="#projects">Upcoming</a>
+  </nav>
+
+  <main id="top">
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <!-- Hero -->
+    <section class="hero">
+      <p class="hero-location fade-in">Based in South of Spain <span aria-hidden="true">&rarr;</span></p>
+      <h1 class="hero-title fade-in">
+        I'm Maris, a designer crafting simple, thoughtful, digital experiences.
+      </h1>
+      <p class="hero-subtitle fade-in">
+        <strong>Senior Product Designer</strong> and co-founder at Fluid.
+      </p>
+      <p class="hero-founder fade-in">
+        <strong>Founder</strong> of Next Chapter <span class="tag">Coming Soon</span>
+      </p>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+      <div class="section-heading fade-in">
+        <h2>About Me</h2>
+      </div>
+
+      <p class="about-me-bio fade-in">Hi! I'm Maris, a digital product designer! With over 5 years of experience in payments and fintech UX, I design user-first flows for those moments where products ask the most of their user (payments, verification, sign-up, backoffice tools and dashboards) and create seamless experiences. With a combined experience of B2B and B2C products, I have faced and enjoyed problems with constraints because that's where design decisions actually matter.</p>
+
+      <p class="about-me-bio fade-in">Fun facts about me: I love to read, draw, I listen to rock/metal music and I am a proud owner of a shelter rescued dog.</p>
+
+      <div class="experience-carousel fade-in">
+        <div class="experience-track" id="experienceTrack">
+          <div class="experience-card">
+            <span class="experience-years">2023 — Present</span>
+            <h3>Senior Product Designer &amp; Co-founder</h3>
+            <p>Fluid</p>
+          </div>
+          <div class="experience-card">
+            <span class="experience-years">Coming Soon</span>
+            <h3>Founder</h3>
+            <p>Next Chapter</p>
+          </div>
+          <div class="experience-card">
+            <span class="experience-years">May 2022 — Feb 2023</span>
+            <h3>Product &amp; Graphic Designer</h3>
+            <p>Soltech</p>
+          </div>
+          <div class="experience-card">
+            <span class="experience-years">Sept 2021 — May 2022</span>
+            <h3>Product &amp; Graphic Designer</h3>
+            <p>Megarush</p>
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <div class="carousel-dots" id="experienceDots"></div>
+          <p class="carousel-note">To learn more details, preview my CV from the top nav.</p>
+          <div class="carousel-arrows">
+            <button class="carousel-btn" id="experiencePrev" aria-label="Previous role">&larr;</button>
+            <button class="carousel-btn" id="experienceNext" aria-label="Next role">&rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How I work -->
+    <section class="process" id="process">
+      <div class="section-heading fade-in">
+        <h2>How I Work</h2>
+      </div>
+
+      <div class="process-carousel fade-in">
+        <div class="process-track" id="processTrack">
+          <div class="process-card">
+            <span class="process-number">01</span>
+            <h3>Discover</h3>
+            <p>Dig into the problem space — talk to users, review data, and align with stakeholders on what actually needs solving.</p>
+          </div>
+          <div class="process-card">
+            <span class="process-number">02</span>
+            <h3>Define</h3>
+            <p>Frame the problem clearly, set success metrics, and scope the smallest version worth building.</p>
+          </div>
+          <div class="process-card">
+            <span class="process-number">03</span>
+            <h3>Design</h3>
+            <p>Explore broadly, then narrow fast. Prototype in low fidelity, test assumptions, and refine with real feedback.</p>
+          </div>
+          <div class="process-card">
+            <span class="process-number">04</span>
+            <h3>Deliver</h3>
+            <p>Partner closely with engineering to ship, measure the impact, and iterate based on what we learn.</p>
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <div class="carousel-dots" id="processDots"></div>
+          <div class="carousel-arrows">
+            <button class="carousel-btn" id="processPrev" aria-label="Previous step">&larr;</button>
+            <button class="carousel-btn" id="processNext" aria-label="Next step">&rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="work" id="work">
+      <div class="section-heading fade-in">
+        <h2>My Projects</h2>
+        <p>A few case studies from the past few years.</p>
+      </div>
+
+      <div class="work-grid">
+        <a href="data-visualisation.html" class="work-card fade-in" data-tilt>
+          <div class="work-card-media">
+            <img src="assets/data-visualisation/cover.png" alt="Data Visualisation - From Numbers to Impact cover">
+          </div>
+          <div class="work-card-info">
+            <div class="work-card-heading">
+              <h3>Data Visualisation - From<br>Numbers to Impact</h3>
+              <div class="work-card-tags">
+                <span class="work-card-tag work-card-tag--existing">Existing product</span>
+                <span class="work-card-tag work-card-tag--case-study">Case Study</span>
+                <span class="work-card-tag work-card-tag--b2b">B2B</span>
+              </div>
+            </div>
+            <p>Designing Fluid's Acquisition Tracking tool.</p>
+            <span class="work-card-arrow" aria-hidden="true">&rarr;</span>
+          </div>
+        </a>
+
+        <a href="error-screens.html" class="work-card fade-in" data-tilt>
+          <div class="work-card-media">
+            <img src="assets/error-screens/cover.png" alt="When Payments Fail cover">
+          </div>
+          <div class="work-card-info">
+            <div class="work-card-heading">
+              <h3>When Payments Fail: Designing Error Screens That Keep Users Going</h3>
+              <div class="work-card-tags">
+                <span class="work-card-tag work-card-tag--existing">Existing product</span>
+                <span class="work-card-tag work-card-tag--case-study">Case Study</span>
+                <span class="work-card-tag work-card-tag--b2c">B2C</span>
+              </div>
+            </div>
+            <p>Designing error screens that keep users going.</p>
+            <span class="work-card-arrow" aria-hidden="true">&rarr;</span>
+          </div>
+        </a>
+
+        <div class="work-card-wrap">
+          <a href="harmony.html" class="work-card fade-in" data-tilt>
+            <div class="work-card-media">
+              <img src="assets/harmony/cover.png" alt="Harmony cover">
+            </div>
+            <div class="work-card-info">
+              <div class="work-card-heading">
+                <h3>Harmony - Creating Small User Habits and Personalisation</h3>
+                <div class="work-card-tags">
+                  <span class="work-card-tag work-card-tag--existing">Existing product</span>
+                  <span class="work-card-tag work-card-tag--case-study">Case Study</span>
+                  <span class="work-card-tag work-card-tag--b2c">B2C</span>
+                  <span class="work-card-tag work-card-tag--styleguide">Styleguide</span>
+                </div>
+              </div>
+              <p>Creating small user habits and personalisation.</p>
+              <span class="work-card-arrow" aria-hidden="true">&rarr;</span>
+            </div>
+          </a>
+          <a href="#" class="work-card-figma-badge" aria-label="View in Figma" target="_blank" rel="noopener">
+            <img src="assets/icons/figma.png" alt="">
+          </a>
+        </div>
+
+        <div class="work-card-wrap">
+          <a href="thought-to-handoff.html" class="work-card fade-in" data-tilt>
+            <div class="work-card-media">
+              <img src="assets/thought-to-handoff/cover.png" alt="From Thought to Hand-off cover">
+            </div>
+            <div class="work-card-info">
+              <div class="work-card-heading">
+                <h3>A Dynamic Design Process - From Thought to Hand-off</h3>
+                <div class="work-card-tags">
+                  <span class="work-card-tag work-card-tag--b2b">B2B</span>
+                  <span class="work-card-tag work-card-tag--b2c">B2C</span>
+                  <span class="work-card-tag work-card-tag--styleguide">Styleguide</span>
+                </div>
+              </div>
+              <p>Designing "to-do", from wireframes to a re-skinned second version.</p>
+              <span class="work-card-arrow" aria-hidden="true">&rarr;</span>
+            </div>
+          </a>
+          <a href="#" class="work-card-figma-badge" aria-label="View in Figma" target="_blank" rel="noopener">
+            <img src="assets/icons/figma.png" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Side projects -->
+    <section class="side-projects" id="projects">
+      <div class="section-heading fade-in">
+        <h2>Upcoming</h2>
+        <p>Things I build for fun, on the side.</p>
+      </div>
+
+      <div class="side-grid">
+        <div class="side-card side-card--featured fade-in">
+          <div class="side-card-media">
+            <img src="assets/next-chapter/cover.svg" alt="Next Chapter cover">
+          </div>
+          <div class="side-card-body">
+            <div class="side-card-body-top">
+              <h3>Next Chapter - Find your next read</h3>
+              <span class="tag">Coming Soon</span>
+            </div>
+            <p>As a full time reader, I find myself with an overwhelming amount of books to read, and find myself with too many choices at the same time. From reader to reader, Next Chapter will suggest books depending on your genre, preferences, past reads and will help you sort through your TBR list. Coming soon in App Store and Google Store.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-wrap" id="photography">
+      <div class="marquee-track">
+        <span>Design &middot; Product &middot; Craft &middot; Curiosity &middot; Design &middot; Product &middot; Craft &middot; Curiosity &middot; </span>
+        <span>Design &middot; Product &middot; Craft &middot; Curiosity &middot; Design &middot; Product &middot; Craft &middot; Curiosity &middot; </span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-top fade-in">
+      <h2>Let's work together.</h2>
+      <a href="mailto:pulkmaris@gmail.com" class="footer-email">pulkmaris@gmail.com</a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Maris Pulk. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harmony - Creating Small User Habits and Personalisation - Maris Pulk</title>
+<meta name="description" content="Creating small user habits and personalisation for the Harmony self-improvement app.">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="article.css">
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Maris Pulk</a>
+      <a href="index.html" class="back-link">&larr; Back</a>
+    </div>
+  </header>
+
+  <main class="article article--orange">
+    <div class="article-header fade-in in-view">
+      <p class="article-eyebrow">Case Study</p>
+      <h1>Harmony - Creating Small User Habits and Personalisation</h1>
+      <p class="article-subtext">A little while ago, a close friend of mine approached me as he'd recently launched an app. He wanted to collaborate on improving the user flows and the user retention — create habits and get more out of the self-improvement aspect of the app.</p>
+      <div class="article-tags">
+        <span class="work-card-tag work-card-tag--existing">Existing product</span>
+        <span class="work-card-tag work-card-tag--case-study">Case Study</span>
+        <span class="work-card-tag work-card-tag--b2c">B2C</span>
+        <span class="work-card-tag work-card-tag--styleguide">Styleguide</span>
+      </div>
+      <a href="https://www.figma.com/design/iOlr0tzs163jV0nkmLSLzM/Harmony---Redesign?node-id=101-10766&t=xK6uEage6nlorvIv-1" class="figma-cta" target="_blank" rel="noopener">
+        <img src="assets/icons/figma.png" alt="">
+        Open in Figma
+      </a>
+    </div>
+
+    <figure class="figure-image article-cover fade-in in-view">
+      <img src="assets/harmony/cover.png" alt="Harmony cover">
+    </figure>
+
+    <article class="article-body fade-in in-view">
+      <h2>Problem statement</h2>
+      <p>My friend's core challenge was retention: users weren't sticking around long enough to build a habit, which was also hurting in-app purchases. His data backed this up — over 60% of users stopped logging in after three consecutive days, and only 10% of users completed the preset tasks set without swapping them out.</p>
+      <figure class="figure-image">
+        <img src="assets/harmony/current-app.png" alt="Screenshot of the current app">
+      </figure>
+      <p class="figure-caption">Current app design</p>
+      <p>Digging into this, I noticed the deeper issue: tasks were being pulled randomly from a back-office list, with no regard for how the user was actually feeling that day. Self-improvement isn't one-size-fits-all — it shifts with mood, energy, personality, and lifestyle — so the tasks the app suggested needed to reflect that instead of treating every day (and every user) the same.</p>
+
+      <h2>Initial ideation</h2>
+      <p>I wanted to keep my friend's existing code structure intact and work within the app's simplicity rather than against it, so my approach became less about adding features and more about layering small, thoughtful touches that would nudge users back throughout the day.</p>
+      <p>The goal was to make self-care feel effortless: small interactions that ask very little of the user but still deliver a genuine sense of "I did something good for myself." That led to a few early ideas:</p>
+
+      <ul>
+        <li>A background that shifts with the time of day, so the character feels like it's actually living alongside the user rather than sitting in a static screen.</li>
+      </ul>
+      <figure class="figure-image">
+        <img src="assets/harmony/backgrounds.png" alt="Time-of-day background examples">
+      </figure>
+      <p class="figure-caption">Dynamic background images</p>
+
+      <ul>
+        <li>Tasks categorized by indoor/outdoor and low/high mood, so they fit naturally into whatever the user's day actually looks like.</li>
+      </ul>
+
+      <ul>
+        <li>A short daily questionnaire — just two questions, on location and mood — to drive that categorization without adding friction.</li>
+      </ul>
+      <figure class="figure-image">
+        <img src="assets/harmony/questionnaire.png" alt="Daily questionnaire screen">
+      </figure>
+      <p class="figure-caption">Mood models</p>
+
+      <p>Underneath all of this was habit-loop theory (trigger &rarr; routine &rarr; reward): each small touchpoint was designed to act as a trigger that pulls the user back in, again and again, until the behavior sticks.</p>
+
+      <h2>The redesign process</h2>
+      <p>Supporting a dynamic, time-of-day background meant rethinking how content sat on top of it — black text doesn't hold up against every background, so I designed containers that stay legible no matter what's behind them. I also pared down the color palette from the original style guide, reusing a smaller set more consistently. For an app this visually busy, simplifying the system wasn't optional, as it was what made everything else legible.</p>
+
+      <h3>Onboarding</h3>
+      <p>The original flow was three summary screens followed by name and pronoun entry. I kept the three screens, since they did a good job introducing the app, but added a short questionnaire in the same spirit as the homepage's — one that starts shaping a sense of the user's personality and feeds into task categorization from day one.</p>
+      <p>Asking for the user's name, date of birth, and pronouns helps the app sort users into meaningful categories and, just as importantly, lets the character relate to them personally rather than generically.</p>
+      <p>I also added step indicators to the top of the flow, so users always know how much is left before they're through sign-up. A small detail that removes uncertainty and makes onboarding feel like an easy task.</p>
+      <figure class="figure-image">
+        <img src="assets/harmony/onboarding.png" alt="Onboarding flow screenshot">
+      </figure>
+      <p class="figure-caption">Onboarding screens</p>
+
+      <h3>Homepage</h3>
+      <p>The top navigation in the original design served an essential purpose, as seeing points and completed tasks at a glance is how users track their own progress. In the original, that visibility was limited to the homepage; and while I was using the app myself, I realized its information was crucial to other parts of the app, making it a permanent top navigation item in every section.</p>
+      <p>Upon opening the app, users complete a breathing exercise that serves as a moment to ground themselves before anything else happens. I added a subtle animation so the character breathes in sync with the user, turning a previously static screen into a handheld experience.</p>
+      <p>From there, the two-question mood/location check-in appears and drives the day's task recommendations (with a neutral option to randomize, for anyone who'd rather skip it). Once that's done, the homepage surfaces the day's tasks alongside other ways to earn points.</p>
+      <figure class="figure-image">
+        <img src="assets/harmony/homepage.png" alt="Homepage screenshot">
+      </figure>
+      <p class="figure-caption">Homepage screens</p>
+
+      <h3>Tasks</h3>
+      <p>The task page still nudges users toward the short questionnaire, but never forces it — they can skip straight to a randomized set if they'd rather. Once the questionnaire is done, users see three tasks tailored to their mood and energy for the day, plus a fourth option: a paid pack unlocking 30+ additional tasks to browse and choose from.</p>
+      <figure class="figure-image">
+        <img src="assets/harmony/tasks.png" alt="Tasks screenshot">
+      </figure>
+      <p class="figure-caption">Tasks screens</p>
+
+      <h3>Journal</h3>
+      <p>The journaling tab included features like voice notes, titles, tags, written descriptions — which was already solid, so I left the functionality alone.</p>
+      <p>What I changed was the format of the journal note entry: originally, adding a note took over the full screen, which made a two-minute action feel heavier than it needed to. I turned it into a drawer instead, so jotting something down stays quick and keeps the user inside the journal, not pulled out of it.</p>
+      <figure class="figure-image">
+        <img src="assets/harmony/journal.png" alt="Journal screenshot">
+      </figure>
+      <p class="figure-caption">Journal screens</p>
+
+      <h3>Shop</h3>
+      <p>The shop stayed largely the same in function, just rebuilt with the updated components and layout. The bigger change was pulling the point total into the top navigation — as in the original, users had no way to see their balance while browsing, which made purchasing decisions feel disconnected from their progress.</p>
+      <figure class="figure-image">
+        <img src="assets/harmony/shop.png" alt="Shop screenshot">
+      </figure>
+      <p class="figure-caption">Shop screen variations</p>
+
+      <h2>Conclusion</h2>
+      <p>Ultimately, this redesign was about stacking small moments that trigger the habit loop — each one reinforcing a sense of self-efficacy, that quiet confidence that comes from completing something you set out to do.</p>
+      <p>Just as important was building in self-compassion: giving users the ability to adapt tasks to what they actually need that day, rather than pushing through a rigid list. Self-care doesn't look the same for everyone, which is exactly why personalization had to be at the center of this redesign, not an afterthought.</p>
+
+      <h2>Next steps</h2>
+      <p>The next step is finalizing user testing before rolling these changes into the live product.</p>
+
+      <h2>Future features</h2>
+      <p>Looking further ahead, there's room to expand personalization even more — water tracking, sharing journal notes with a mental health professional, more mobile notifications and deeper background customization are all natural next layers to build on top of this foundation.</p>
+    </article>
+
+    <div class="article-footer">
+      <a href="index.html" class="back-link">&larr; Back to home</a>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

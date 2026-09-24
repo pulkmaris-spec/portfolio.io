@@ -1,0 +1,258 @@
+/* ============================================================
+   Article / text-based project page
+   ============================================================ */
+.site-header .header-inner {
+  position: relative;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+.site-header .header-inner .logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+  padding: 8px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  transition: all var(--transition-fast);
+}
+
+.back-link:hover {
+  color: var(--color-bg);
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.article {
+  position: relative;
+  z-index: 0;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: calc(var(--header-height) + 64px) 24px 96px;
+}
+
+.article::before,
+.article::after {
+  content: "";
+  position: fixed;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--article-glow) 0%, transparent 70%);
+  filter: blur(90px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.article::before {
+  top: 100px;
+  left: -400px;
+}
+
+.article::after {
+  bottom: 80px;
+  right: -400px;
+}
+
+.article--orange {
+  --article-glow: rgba(255, 145, 77, 0.65);
+}
+
+.article--blue {
+  --article-glow: rgba(74, 138, 247, 0.62);
+}
+
+.article--pink {
+  --article-glow: rgba(255, 102, 153, 0.62);
+}
+
+.article--purple {
+  --article-glow: rgba(139, 92, 246, 0.62);
+}
+
+@media (max-width: 1100px) {
+  .article::before,
+  .article::after {
+    display: none;
+  }
+}
+
+.article-header {
+  margin-bottom: 48px;
+}
+
+.article-eyebrow {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: 16px;
+}
+
+.article-header h1 {
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.article-subtext {
+  font-size: 18px;
+  color: var(--color-muted);
+}
+
+.article-meta {
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.figma-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: #111111;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  transition: opacity var(--transition-fast);
+}
+
+.figma-cta:hover {
+  opacity: 0.85;
+}
+
+.figma-cta img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.figma-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.figma-cta-group .figma-cta {
+  margin-top: 0;
+}
+
+.figma-cta--light {
+  background: #ffffff;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+.article-body {
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.article-body p {
+  margin-bottom: 24px;
+}
+
+.article-body ul {
+  margin: 0 0 24px;
+  padding-left: 20px;
+}
+
+.article-body li {
+  margin-bottom: 12px;
+}
+
+.article-body h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 40px 0 16px;
+  letter-spacing: -0.01em;
+}
+
+.article-body h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 32px 0 12px;
+  letter-spacing: -0.01em;
+}
+
+.figure-placeholder {
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius);
+  border: 1px dashed var(--color-border);
+  background: #fafafa;
+  margin: 8px 0 0;
+}
+
+.figure-image {
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin: 8px 0 0;
+}
+
+.figure-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.article-cover {
+  margin: 0 0 48px;
+}
+
+.figure-caption {
+  font-size: 13px;
+  color: var(--color-muted);
+  text-align: center;
+  margin-top: 8px;
+}
+
+.article-body blockquote {
+  border-left: 2px solid var(--color-text);
+  padding-left: 20px;
+  margin: 32px 0;
+  font-size: 19px;
+  color: var(--color-text);
+  font-style: italic;
+}
+
+.article-footer {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border);
+}
+
+@media (max-width: 768px) {
+  .article {
+    padding: calc(var(--header-height) + 32px) 20px 64px;
+  }
+
+  .article-body {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>When Payments Fail: Designing Error Screens That Keep Users Going - Maris Pulk</title>
+<meta name="description" content="Designing error screens that keep users going when payments fail.">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="article.css">
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Maris Pulk</a>
+      <a href="index.html" class="back-link">&larr; Back</a>
+    </div>
+  </header>
+
+  <main class="article article--pink">
+    <div class="article-header fade-in in-view">
+      <p class="article-eyebrow">Case Study</p>
+      <h1>When Payments Fail: Designing Error Screens That Keep Users Going</h1>
+      <p class="article-subtext">Design isn't just about creating the perfect flow — it's about connecting edge cases into a seamless experience.</p>
+      <div class="article-tags">
+        <span class="work-card-tag work-card-tag--existing">Existing product</span>
+        <span class="work-card-tag work-card-tag--case-study">Case Study</span>
+        <span class="work-card-tag work-card-tag--b2c">B2C</span>
+      </div>
+      <p class="article-meta">By: Senior Product Designer at Fluid &middot; Timeline: 2025</p>
+    </div>
+
+    <figure class="figure-image article-cover fade-in in-view">
+      <img src="assets/error-screens/cover.png" alt="When Payments Fail cover">
+    </figure>
+
+    <article class="article-body fade-in in-view">
+      <h2>Context and problem</h2>
+      <p>In payments, building user trust is a critical part of the journey. At first glance, trust elements like official government-approved badges, privacy assurance and licenses are standard to create the credibility with the user.</p>
+      <p>When you think of an error message, the first phrase that often comes to mind is "Something went wrong!". While that can be enough in some products, it's not sufficient for payments, where transactions can fail for many different reasons.</p>
+      <figure class="figure-image">
+        <img src="assets/error-screens/generic-error.png" alt="Generic error screen">
+      </figure>
+      <p class="figure-caption">Generic error message</p>
+      <p>Without clear guidance, users may repeat the same action, hit the same error again, and become frustrated. Repeated failed attempts often lead to abandonment.</p>
+      <p>But trust isn't only about legality; it can come from transparency. Clear, detailed messages help users feel like you're on their side and want them to succeed.</p>
+      <figure class="figure-image">
+        <img src="assets/error-screens/helping-text.png" alt="Example of a helping text on an error screen">
+      </figure>
+      <p class="figure-caption">Generic vs detailed error message</p>
+
+      <h2>Understanding the errors</h2>
+      <p>Transactions can fail for many reasons: declined by the bank, insufficient funds, invalid card details, verification failures, and more. When all of these are reduced to "Something went wrong", frustration is almost inevitable.</p>
+      <p>Payment-method errors usually come from a provider. At Fluid, I grouped them into broader categories using two main blocks: user errors and system errors.</p>
+      <p>Working in a highly regulated industry like iGaming also means accounting for fraudulent attempts and blacklisted users. These are the exception: if we detect suspicious behaviour, the less information we provide, the better.</p>
+
+      <h2>Users and their state of mind</h2>
+      <p>In most products, a transaction is the final step before a user receives a reward—whether that's shopping online, paying for a flight, or (in Fluid's case) starting a game.</p>
+      <p>This puts users in a mindset where they want to complete the transaction as quickly as possible, with minimal distractions. When errors occur (especially ones that feel unknown) conversion can drop dramatically.</p>
+      <p>And with payments, a user's first instinct is often to check whether the money actually left the account.</p>
+
+      <h2>Design principles</h2>
+      <ul>
+        <li><strong>Visual aid:</strong> define icons that instantly communicate what went wrong. Example: Transaction expired &rarr; clock. Cancelled by user &rarr; a user icon.</li>
+        <li><strong>Clear error title:</strong> a short, straight-to-the-point title that summarises what happened.</li>
+        <li><strong>Contact support button:</strong> help users feel supported by adding a clear "Contact support" button.</li>
+        <li><strong>Alternative methods:</strong> depending on the error type—especially payment-method related—allow users to choose another method and jump straight back into the transaction flow.</li>
+        <li><strong>Take them where they left off:</strong> when users click "try again", don't force them through the entire flow. Instead, return them to the step right before the error, making the process feel less burdensome.</li>
+      </ul>
+
+      <h2>The design process</h2>
+      <p>The first step was mapping the necessary content and organising its hierarchy. With the icon in red, the title in bold, and the body text in regular weight, the screen followed a clear, standard structure.</p>
+      <p>We also gave our B2B customers the option to customise error messages: editing copy, adapting translations, and selecting from a shared icon library for different error states.</p>
+      <figure class="figure-image">
+        <img src="assets/error-screens/icons.png" alt="Icon library for error states">
+      </figure>
+      <p class="figure-caption">Icon library for error messages</p>
+      <p>That direction set the tone: a minimalistic icon library and wording that stayed as clear and concise as possible while remaining friendly.</p>
+      <p>Some errors, like "Wrong CVC", didn't require a full-screen state and could be prevented. For example, the credit card input doesn't accept a 2-digit CVC and requires a minimum of 3. Instead of allowing a failed transaction, we prevent the deposit attempt until the required input is provided.</p>
+      <figure class="figure-image">
+        <img src="assets/error-screens/card-cvc.png" alt="Card component showing CVC error prevention">
+      </figure>
+      <p class="figure-caption">Card component: CVC Error state</p>
+
+      <h2>The final designs</h2>
+      <p>The final error screen designs include three main blocks: (1) the icon, error message, and contact support; (2) a summary of the attempted transaction (useful if the user contacts support); and (3) a payment-method selector, allowing users to choose an alternative method and complete the transaction. Separating information into distinct blocks makes it easier to scan and digest.</p>
+      <figure class="figure-image">
+        <img src="assets/error-screens/final-design-screens.png" alt="Final error screen designs, 2-3 screens">
+      </figure>
+      <p class="figure-caption">Final design: detailed error message screens</p>
+      <p>In some edge cases, like "KYC Verification Required" or "Account Restricted", the alternative method is intentionally not offered, since another deposit attempt would lead to the same outcome.</p>
+      <figure class="figure-image">
+        <img src="assets/error-screens/final-design-kyc.png" alt="KYC Verification Required error screen">
+      </figure>
+      <p class="figure-caption">Final design: edge cases</p>
+      <p>Overall, B2B customers can customise icons per error message and start from a strong copy baseline—helping end users get as much transparency as possible about the state of their transaction.</p>
+
+      <h2>Collaboration and constraints</h2>
+      <p>Regulations dictated that once a user is flagged as "blacklisted", they shouldn't be told the exact reason they can't complete a transaction.</p>
+      <p>Another constraint was determining, for each error type, where to return the user in the flow so they could resume without unnecessary repetition.</p>
+
+      <h2>Impact and measurement plan</h2>
+      <p>This iteration proved successful: on average, <strong>50% of users completed a deposit on their second attempt.</strong> It also significantly reduced support contacts, since users could see the information they needed directly on the error screen.</p>
+
+      <h2>Next steps</h2>
+      <p>Continue supporting error states, and capture deeper insights into error-screen behaviour by adding a dedicated section in the data visualisation tool.</p>
+    </article>
+
+    <div class="article-footer">
+      <a href="index.html" class="back-link">&larr; Back to home</a>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
